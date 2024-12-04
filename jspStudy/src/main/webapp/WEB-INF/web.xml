@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>jspStudy</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>visitInsert</servlet-name>
+    <servlet-class>co.kh.dev.bbs.VisitInsert</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>visitInsert</servlet-name>
+    <url-pattern>/visitInsert</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>memberInsert</display-name>
+    <servlet-name>memberInsert</servlet-name>
+    <servlet-class>co.kh.devmember.MemberInsert</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>memberInsert</servlet-name>
+    <url-pattern>/memberInsert</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>memberList</display-name>
+    <servlet-name>memberList</servlet-name>
+    <servlet-class>co.kh.devmember.MemberList</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>memberList</servlet-name>
+    <url-pattern>/memberList</url-pattern>
+  </servlet-mapping>
+</web-app>
